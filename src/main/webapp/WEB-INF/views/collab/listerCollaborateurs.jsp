@@ -34,7 +34,7 @@
 						List<Departement> listeDep = (List<Departement>) request.getAttribute("listeDep");
 						for (Departement dep : listeDep) {
 					%>
-					<option value="<%=dep.getNom()%>"><%=dep.getNom()%></option>
+					<option value=<%=dep.getNom()%>><%=dep.getNom()%></option>
 					<%
 						}
 					%>

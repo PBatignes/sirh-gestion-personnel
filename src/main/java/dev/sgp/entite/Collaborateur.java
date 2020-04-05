@@ -31,6 +31,12 @@ public class Collaborateur {
 	Departement departement;
 	/** numTel */
 	String numTel;
+	/** banque */
+	String banque;
+	/** bic */
+	String bic;
+	/** iban */
+	String iban;
 
 	/**Constructor
 	 *
@@ -307,6 +313,54 @@ public class Collaborateur {
 	 */
 	public void setNumTel(String numTel) {
 		this.numTel = numTel;
+	}
+
+	/**Getter
+	 *
+	 * @return the banque
+	 */
+	public String getBanque() {
+		return banque;
+	}
+
+	/**Setter
+	 *
+	 * @param banque the banque to set
+	 */
+	public void setBanque(String banque) {
+		this.banque = banque;
+	}
+
+	/**Getter
+	 *
+	 * @return the bic
+	 */
+	public String getBic() {
+		return bic;
+	}
+
+	/**Setter
+	 *
+	 * @param bic the bic to set
+	 */
+	public void setBic(String bic) {
+		this.bic = bic;
+	}
+
+	/**Getter
+	 *
+	 * @return the iban
+	 */
+	public String getIban() {
+		return iban;
+	}
+
+	/**Setter
+	 *
+	 * @param iban the iban to set
+	 */
+	public void setIban(String iban) {
+		this.iban = iban;
 	}
 
 }
