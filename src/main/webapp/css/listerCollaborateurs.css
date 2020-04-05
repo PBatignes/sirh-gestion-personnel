@@ -1,0 +1,37 @@
+.page {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+	width: 90%;
+}
+
+.corps {
+	width: 90%;
+}
+
+.recherche {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.filtre {
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+}
+
+.imput-rech {
+	height: 90%;
+}
+
+.dep-select {
+	height: 90%;
+}
+
+.card-contenu {
+	display: flex;
+}

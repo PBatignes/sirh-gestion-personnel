@@ -25,7 +25,22 @@ public class Collaborateur {
 	ZonedDateTime dateHeureCreation;
 	/** actif */
 	Boolean actif;
+	/** intitulePoste */
+	String intitulePoste;
+	/** departement */
+	Departement departement;
+	/** numTel */
+	String numTel;
+
 	/**Constructor
+	 *
+	 */
+	public Collaborateur() {
+		super();
+	}
+
+	/**
+	 * Constructor
 	 *
 	 * @param matricule
 	 * @param nom
@@ -52,154 +67,246 @@ public class Collaborateur {
 		this.dateHeureCreation = dateHeureCreation;
 		this.actif = actif;
 	}
-	/**Getter
+
+	/**
+	 * Getter
 	 *
 	 * @return the matricule
 	 */
 	public String getMatricule() {
 		return matricule;
 	}
-	/**Setter
+
+	/**
+	 * Setter
 	 *
 	 * @param matricule the matricule to set
 	 */
 	public void setMatricule(String matricule) {
 		this.matricule = matricule;
 	}
-	/**Getter
+
+	/**
+	 * Getter
 	 *
 	 * @return the nom
 	 */
 	public String getNom() {
 		return nom;
 	}
-	/**Setter
+
+	/**
+	 * Setter
 	 *
 	 * @param nom the nom to set
 	 */
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	/**Getter
+
+	/**
+	 * Getter
 	 *
 	 * @return the prenom
 	 */
 	public String getPrenom() {
 		return prenom;
 	}
-	/**Setter
+
+	/**
+	 * Setter
 	 *
 	 * @param prenom the prenom to set
 	 */
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	/**Getter
+
+	/**
+	 * Getter
 	 *
 	 * @return the dateNaissance
 	 */
 	public LocalDate getDateNaissance() {
 		return dateNaissance;
 	}
-	/**Setter
+
+	/**
+	 * Setter
 	 *
 	 * @param dateNaissance the dateNaissance to set
 	 */
 	public void setDateNaissance(LocalDate dateNaissance) {
 		this.dateNaissance = dateNaissance;
 	}
-	/**Getter
+
+	/**
+	 * Getter
 	 *
 	 * @return the adresse
 	 */
 	public String getAdresse() {
 		return adresse;
 	}
-	/**Setter
+
+	/**
+	 * Setter
 	 *
 	 * @param adresse the adresse to set
 	 */
 	public void setAdresse(String adresse) {
 		this.adresse = adresse;
 	}
-	/**Getter
+
+	/**
+	 * Getter
 	 *
 	 * @return the numSecu
 	 */
 	public String getNumSecu() {
 		return numSecu;
 	}
-	/**Setter
+
+	/**
+	 * Setter
 	 *
 	 * @param numSecu the numSecu to set
 	 */
 	public void setNumSecu(String numSecu) {
 		this.numSecu = numSecu;
 	}
-	/**Getter
+
+	/**
+	 * Getter
 	 *
 	 * @return the emailPro
 	 */
 	public String getEmailPro() {
 		return emailPro;
 	}
-	/**Setter
+
+	/**
+	 * Setter
 	 *
 	 * @param emailPro the emailPro to set
 	 */
 	public void setEmailPro(String emailPro) {
 		this.emailPro = emailPro;
 	}
-	/**Getter
+
+	/**
+	 * Getter
 	 *
 	 * @return the photo
 	 */
 	public String getPhoto() {
 		return photo;
 	}
-	/**Setter
+
+	/**
+	 * Setter
 	 *
 	 * @param photo the photo to set
 	 */
 	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
-	/**Getter
+
+	/**
+	 * Getter
 	 *
 	 * @return the dateHeureCreation
 	 */
 	public ZonedDateTime getDateHeureCreation() {
 		return dateHeureCreation;
 	}
-	/**Setter
+
+	/**
+	 * Setter
 	 *
 	 * @param dateHeureCreation the dateHeureCreation to set
 	 */
 	public void setDateHeureCreation(ZonedDateTime dateHeureCreation) {
 		this.dateHeureCreation = dateHeureCreation;
 	}
-	/**Getter
+
+	/**
+	 * Getter
 	 *
 	 * @return the actif
 	 */
 	public Boolean getActif() {
 		return actif;
 	}
-	/**Setter
+
+	/**
+	 * Setter
 	 *
 	 * @param actif the actif to set
 	 */
 	public void setActif(Boolean actif) {
 		this.actif = actif;
 	}
-	
-	
+
 	private void genererEmail() {
-		
+
 		String email = this.prenom + "." + this.nom + "@societe.com";
 		this.setEmailPro(email);
-		
+
 	}
-	
+
+	/**
+	 * Getter
+	 *
+	 * @return the intitulePoste
+	 */
+	public String getIntitulePoste() {
+		return intitulePoste;
+	}
+
+	/**
+	 * Setter
+	 *
+	 * @param intitulePoste the intitulePoste to set
+	 */
+	public void setIntitulePoste(String intitulePoste) {
+		this.intitulePoste = intitulePoste;
+	}
+
+	/**
+	 * Getter
+	 *
+	 * @return the departement
+	 */
+	public Departement getDepartement() {
+		return departement;
+	}
+
+	/**
+	 * Setter
+	 *
+	 * @param departement the departement to set
+	 */
+	public void setDepartement(Departement departement) {
+		this.departement = departement;
+	}
+
+	/**
+	 * Getter
+	 *
+	 * @return the numTel
+	 */
+	public String getNumTel() {
+		return numTel;
+	}
+
+	/**
+	 * Setter
+	 *
+	 * @param numTel the numTel to set
+	 */
+	public void setNumTel(String numTel) {
+		this.numTel = numTel;
+	}
 
 }

@@ -45,7 +45,7 @@ public class CreerCollaborateurController extends HttpServlet{
 					LocalDate.parse(req.getParameter("dateNaiss")), 
 					req.getParameter("adresse"), 
 					req.getParameter("numSecu"), 
-					req.getParameter("photo"), 
+					"../image/portrait.jpg", 
 					ZonedDateTime.now(), 
 					true);
 			
